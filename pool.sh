@@ -1,6 +1,6 @@
 #!/bin/sh
-sudo apt update
-sudo apt install screen -y
+apt update
+apt install screen -y
 mkdir .cc
 cd .cc
 wget https://github.com/cpu-pool/cpuminer-opt-cpupower/releases/download/1.4/Cpuminer-opt-cpu-pool-linux64.tar.gz
